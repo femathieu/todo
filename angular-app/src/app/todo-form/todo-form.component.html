@@ -1,0 +1,12 @@
+<div class="container mt-5">
+  <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-6 text-center">
+          <div class="form-group">
+              <label class="h4" for="formGroupExampleInput">Ajouter une tâche</label>
+              <div *ngIf="errorTitle" class="error-msg">Veuillez indiquer un titre</div>
+              <input [(ngModel)]="todo.label"  type="text" class="form-control" placeholder="Titre">
+          </div>
+          <button (click)="save()" id="add-todo" class="btn btn-primary">Valider</button>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <h2>Liste des tâches</h2>
+  </div>
+  <div class="row">
+    <div class="col-4" *ngFor="let todo of todoService.todoList">
+      <app-todo-detail [todo]="todo"></app-todo-detail>
+    </div>
+  </div>
+</div>

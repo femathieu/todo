@@ -1,0 +1,10 @@
+<div class="card my-2">
+  <div class="card-body">
+    <p>{{todo.label}}</p>
+    <div class="card-footer">
+      <div class="form-check"></div>
+      <input type="checkbox" [ngModel]="todo.check" (ngModelChange)="onCheckChange($event)">
+      <label>J'ai terminé ma tâche</label>
+    </div>
+  </div>
+</div>
